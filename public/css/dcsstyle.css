@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.618em;
+    
+  }
+  
+  /* Style the header */
+  .header {
+     background-color: #091138;
+    text-align: center;
+   /* font-size: 35px; */
+    height: 140px;
+  }
+  
+  
+  /* Style the footer */
+  .footer {
+    
+    background-color: #091138;
+    color: #fff;
+   /* padding: 5px; */
+    text-align: center;
+    width:99%;
+    position:fixed;
+      bottom:0;
+  }
+  
+  
+  
+  .center {
+    margin: 20px;
+    width: auto;
+   border: 3px solid #091138; 
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .wrapper {
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    min-height:100%;
+     position:relative;
+  }
+  .tabs {
+    position: relative;
+    margin: 3rem 0;
+    background: #091138;
+    height: 14.75rem;
+  }
+  .tabs::before,
+  .tabs::after {
+    content: "";
+    display: table;
+  }
+  .tabs::after {
+    clear: both;
+  }
+  .tab {
+    float: left;
+  }
+  .tab-switch {
+    display: none;
+  }
+  .tab-label {
+    position: relative;
+    display: block;
+    line-height: 2.75em;
+    height: 3em;
+    padding: 0 1.618em;
+    background: #1c34ac;
+    border-right: 0.125rem solid #1c3acf;
+    color: #fff;
+    cursor: pointer;
+    top: 0;
+    transition: all 0.25s;
+  }
+  .tab-label:hover {
+    top: -0.25rem;
+    transition: top 0.25s;
+  }
+  .tab-content {
+    height: auto;
+    position: absolute;
+    z-index: 1;
+    top: 2.75em;
+    left: 0;
+    padding: 1.618rem;
+    background: #fff;
+    color: black;
+    border-bottom: 0.25rem solid #091138;
+    opacity: 0;
+    transition: all 0.35s;
+  }
+  .tab-switch:checked + .tab-label {
+    background: #1c34ac;
+    color: #f7f440;
+    border-bottom: 0;
+    border-right: 0.125rem solid #fff;
+    transition: all 0.35s;
+    z-index: 1;
+    top: -0.0625rem;
+  }
+  .tab-switch:checked + label + .tab-content {
+    z-index: 2;
+    opacity: 1;
+    transition: all 0.35s;
+  }
+  
+  a:link, a:visited {
+    background-color: #1c34ac;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: #091138;
+  }
+
+  .message {
+    padding: 6px 20px;
+    font-size: 1em;
+    color: rgb(40, 40, 40);
+    box-sizing: border-box;
+    margin: 0px;
+    border-radius: 3px;
+    width: 100%;
+    overflow: auto;
+}
+
+  .error {
+    padding: 6px 20px;
+    border-radius: 3px;
+    background-color: #ffe7e7;
+    border: 1px solid #e46b66;
+    color: #dc0d24;
+}
+
+.text-center {
+  text-align: center;
+}
